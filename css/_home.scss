@@ -1,0 +1,303 @@
+@import "./responsive";
+
+.container{
+    margin: auto 6.5%;
+    margin-bottom: 12px;
+    border: 1px solid #A5A5A7;
+    display: flex;
+    flex-direction: column;
+    @include desktop1 {
+        margin: auto 8%;
+        margin-bottom: 12px;
+    }
+    @include desktop2 {
+        margin: auto 15%;
+    }
+    @include desktop3 {
+        margin: auto 20%;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include tablet2{
+            flex-direction: column;
+            align-items: center;
+        }
+        .col1{
+            margin-top: 145px;
+            margin-left: 38px;
+            @include laptop3{
+                margin-top: 100px;
+                margin-left: 30px;
+            }
+            @include tablet1{
+                margin-top: 87px;
+            }
+            @include tablet2{
+                margin-top: 74px;
+                margin-left: 0px;
+            }
+            @include mobile1{
+                margin-left: 18px;
+            }
+            @include mobile1{
+                margin-left: 0px;
+                align-items: center;
+            }
+            h3{
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 18px;color: #A5A5A7;
+                margin-bottom: 23px;
+                @include laptop1 {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 22px;
+                }
+                @include laptop2{
+                    font-size: 9px;
+                    line-height: 13px;
+                    margin-bottom: 20px;
+                }
+                @include laptop3{
+                    font-size: 8px;
+                    line-height: 10px;
+                }
+                @include tablet1{
+                    font-size: 6px;
+                    line-height: 10px;
+                }
+                @include tablet2{
+                    font-size: 15px;
+                    line-height: 13px;margin-bottom: 29px;
+                }
+                @include mobile1{
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            
+            }
+            h1{
+                font-weight: 800;
+                font-size: 46px;
+                line-height: 55px;
+                color: $textColor;
+                margin-bottom: 23px;
+                @include laptop1 {
+                    font-size: 44px;
+                    line-height: 53px;
+                }
+                @include laptop2 {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                @include laptop3{
+                    font-size: 27.2px;
+                    line-height: 10px;
+
+                }@include tablet1{
+                    font-size: 20px;
+                    line-height: 10px;
+                }
+                @include tablet2{
+                    font-size: 25px;
+                    margin-bottom: 29px;
+                    line-height: 25px;
+                }
+                @include mobile1{
+                    font-size: 21px;
+                    line-height: 25px;
+                }
+            }
+            h2{
+                font-weight: 800;
+                font-size: 28px;
+                line-height: 34px;
+                color: $secondary;
+                margin-bottom: 50px;
+                @include laptop1 {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                @include laptop2 {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+                @include laptop3{
+                    font-size: 15px;margin-bottom: 40px;
+                }@include tablet1{
+                    font-size: 10px;
+                    line-height: 10px;margin-bottom: 30px;
+                }
+                @include tablet2{
+                    font-size: 17px;
+                    line-height: 16px;
+                    margin-bottom: 47px;
+                }
+                @include mobile1{font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+            button{
+                display: inline-block;
+                outline: none;
+                border: 0;
+                width: 140px;
+                height: 37px;
+                background-color: $primary;font-weight: 800;
+                font-size: 12.5px;
+                line-height: 15px;
+                align-items: center;
+                color: $textColor;
+                @include laptop3{
+                    width: 110px;
+                    height: 28px;font-size: 10px;
+                    line-height: 12px;
+                }@include tablet1{
+                    width: 
+                    76px;
+                    height: 20px;font-size: 7px;
+                    line-height: 12px;
+                    img{
+                        width: 6.77px;
+
+                    }
+                }
+                @include tablet2{
+                    width: 66px;
+                    height: 21px;
+                    font-size: 6px;
+                    line-height: 7px;
+                    img{
+                        width: 6.77px;
+
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color: $secondary;
+                }
+            }
+        }
+        .col2{
+            img{
+                height: 438px;
+                margin: 65px 18px 35px 0;
+                @include laptop1 {
+                    height: 390px;
+                }
+                @include laptop2 {
+                    height: 347px;
+                }
+                @include laptop3{
+                    height: 260px;
+                }
+                @include tablet1{
+                    height: 170px;
+                }
+                @include tablet2{
+                    height: 270px;
+                    margin: 60px 0 86px 0;
+                }
+                @include mobile1{
+                    height: 246px;
+                }
+                @include mobile2{
+                    height: 210px;
+                    margin: 40px 0 50px 0;
+                }
+            }
+        }
+    }
+    .text{
+        border: 1px solid #A5A5A7;
+        display: flex;
+        justify-content: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        overflow: hidden;
+        .txt{
+            font-weight: 800;
+            font-size: 11.8px;
+            line-height: 15px;
+            color: $textColor;
+            flex: 0 0 auto;
+            animation: scrollText 33s infinite linear;
+            display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        }
+    }
+    @keyframes scrollText {
+        from   { transform: translateX(0%); }
+        to { transform: translateX(-50%); }
+      }
+        
+
+}
+    
+
+::-webkit-scrollbar {
+  background: $background;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px $background;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+  
+}
+
+
+.wrapper {
+  border: 1px solid $background;
+  height: calc(100vh - 2px);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  width: calc(100vw - 2.55px);
+}
+
+.scroll-top {
+  background: $primary;
+  border: 0;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 15px;
+  opacity: 0.75;
+  position: fixed;
+  right: -70px;
+  transition: right 0.2s ease-in-out;
+  width: 50px;
+  z-index: 99;
+  
+}
+.scroll-top.visible {
+  right: 0;
+  
+}
+
+.arrow {
+  border: solid $textColor;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px;
+}
+.arrow.up {  
+  transform: rotate(-135deg);
+}

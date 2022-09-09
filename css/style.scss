@@ -1,0 +1,31 @@
+$background: #222224;
+$primary: #0918CD;
+$secondary: #7D87E6;
+$textColor: #FFFFFF;
+$shade1: #A5A5A7;
+$shade2: #E5E5E8;
+$borderb: rgba(9, 24, 205, 0.37);
+
+
+@import "./header";
+@import "./menu";
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./portfolio";
+@import "./contact";
+@import "./footer";
+@import "./responsive";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+html, body {
+    background-color: $background;
+    width: 100%;
+    height: 100%;
+}

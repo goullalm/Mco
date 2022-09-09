@@ -1,0 +1,144 @@
+@import "./responsive";
+.portfolio{
+    margin: 24px 21px 0 21px;
+    padding: 50px 66px;
+    border: 1px solid #A5A5A7;
+    display: flex;
+    flex-direction: column;
+    @include laptop3{
+        padding: 30px 50px;
+    }
+    @include tablet1{
+        padding: 20px 40px;
+        align-items: center;
+        padding-top: 60px;
+    }@include tablet2{
+        margin: 14px 11px 0 11px;
+    }
+    h2{
+        text-align: right;
+        font-weight: 800;
+        font-size: 33px;
+        line-height: 40px;
+        color: $textColor;
+        @include laptop2{
+            font-size: 26px;
+        }
+        @include laptop3{
+            font-size: 20px;
+            line-height: 35px;
+        }
+        @include tablet1{
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+        }
+        @include tablet2{
+            font-size: 27px;
+            line-height: 26px;
+            padding-bottom: 10px;
+        }
+        @include mobile2{
+            font-size: 19px;
+            line-height: 26px;
+        }
+        span{
+            background: linear-gradient(130deg, $borderb 0%, $borderb 100%);
+            background-repeat: no-repeat;background-size: 100% 45%;background-position: 0 100%;
+            padding-bottom: 10px;
+        }
+    }
+    .projects{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 72px;
+        @include laptop3{
+            margin-top: 60px;
+        }
+        @include tablet1{
+            flex-direction: column;
+            margin-top: 57px;
+        }
+        .project{
+            border: 1px solid $shade2;
+            border-radius: 8px;
+            width: 310.64px;
+            height: 238px;
+            padding: 30px 40px;
+            @include laptop2{
+                width: 220px;
+                height: 153px;
+                padding: 20px 30px;
+            }
+            @include laptop3{
+                width: 170px;
+                height: 140px;
+                padding: 12px 22px;
+            }
+            @include tablet1{
+                width: 216px;
+                height: 129px;
+                padding: 16px 22px;
+                margin-bottom: 26px;
+            }
+            h4{
+                font-weight: 800;
+                font-size: 17px;
+                line-height: 20px;
+                margin-bottom: 17px;
+                color: $textColor;
+                @include laptop2{
+                    font-size: 12px;
+                    line-height: 15px;margin-bottom: 13px;
+                }
+                @include laptop3{
+                    font-size: 9px;margin-bottom: 10px;
+                }
+                @include tablet1{
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+            p{
+                font-weight: 700;
+                font-size: 13.5px;
+                line-height: 18px;
+                color: $shade2;
+                margin-bottom: 15px;
+                @include laptop2{
+                    font-size: 9px;
+                    line-height: 11px;margin-bottom: 6.6px;
+                }
+                @include laptop3{
+                    font-size: 7.5px;margin-bottom: 5px;
+                }
+                @include tablet1{
+                    font-size: 8.5px;
+                    line-height: 10px;
+                }
+            }
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 12px;
+                color: $secondary;
+                &:hover{
+                    text-decoration: underline;
+                }
+                @include laptop2{
+                    font-size: 10.5px;
+                    line-height: 13px;
+                }
+                @include laptop3{
+                    font-size: 9px;
+                }
+                @include tablet1{
+                    font-size: 7.5px;
+                    line-height: 9px;
+                }
+            }
+        }
+    }
+}

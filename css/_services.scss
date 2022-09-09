@@ -1,0 +1,269 @@
+@import "./responsive";
+
+.services{
+    margin: 24px 21px 0 21px;
+    border: 1px solid #A5A5A7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include laptop3{
+        flex-direction: column;
+    }@include tablet2{
+        margin: 14px 11px 0 11px;
+    }
+    .s1{
+        flex-basis: 30%;
+        padding-top: 160px;
+        padding-right: 50PX;
+        padding-left: 50px;
+        @include laptop2{
+            padding-right: 40PX;
+            padding-left: 40px;
+        }
+        @include desktop1{
+            flex-basis: 35%;
+        }
+        @include laptop3{
+            padding-top: 96px;
+            padding-right: 26px;
+            padding-left: 26px;
+            padding-bottom: 96px;
+            text-align: center;
+            align-items: center;
+        }
+        @include tablet1{
+            padding: 76px 16px;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 33px;
+            line-height: 250.5%;
+            color: $textColor;
+            @include desktop1{
+                font-size: 35px;
+                line-height: 250.5%;
+            }
+            @include laptop2{
+                font-size: 26px;
+                line-height: 220%;
+            }
+            @include laptop3{
+                font-size: 20px;
+                line-height: 35px;
+                br{
+                    display: none;
+                }
+                span{
+                    background: linear-gradient(130deg, $borderb 0%, $borderb 100%);
+                    background-repeat: no-repeat;background-size: 100% 45%;background-position: 0 100%;
+                    padding-bottom: 10px;
+                }
+            }
+            @include tablet1{
+                font-size: 16px;
+                line-height: 20px;
+            }@include tablet2{
+                font-size: 25px;
+                line-height: 26px;
+                padding-bottom: 10px;
+            }
+            @include mobile1{
+                font-size: 22px;
+                line-height: 26px;
+            }
+            @include mobile2{
+                font-size: 19px;
+                line-height: 26px;
+            }
+
+            span{
+                background: linear-gradient(130deg, $borderb 0%, $borderb 100%);
+                background-repeat: no-repeat;background-size: 100% 45%;background-position: 0 100%;
+                padding-bottom: 10px;
+                
+            }
+        }
+    }
+    .s2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        @include desktop1{
+            flex-basis: 65%;
+        }
+        .s21{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #A5A5A7;
+            @include laptop2{
+                padding-right: 32px;   
+            }
+            @include tablet1{
+                padding-right: 25px;
+            }
+            .num{
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 196.5%;
+                color: $primary;
+                margin-left: 51px;
+                margin-top: 13px;
+                @include desktop1{
+                    font-size: 36px;
+                    line-height: 196.5%;
+                    margin-left: 52px;
+                }
+                @include laptop2{
+                    font-size: 24px;
+                    line-height: 196.5%;
+                    margin-left: 34px;
+                }
+                @include tablet1{
+                    font-size: 18px;margin-left: 25px;
+                }
+                @include tablet2{
+                    font-size: 17px;margin-left: 24px;
+                }
+            }
+            
+            .s212{
+                display: flex;
+                flex-direction: column;
+                margin-left: 50.5px;
+                margin-top: 15px;
+                margin-right: 15px;
+                @include tablet1{
+                    margin-left: 30.5px;
+                }@include tablet1{
+                    margin-left: 26.5px;
+                }
+                h3{
+                    font-weight: 700;
+                    font-size: 31px;
+                    line-height: 196.5%;
+                    color: $textColor;
+                    margin-bottom: 3px;
+                    @include desktop1{
+                        font-size: 35px;
+                        line-height: 196.5%;
+                    }
+                    @include laptop2{
+                        font-size: 23px;
+                        line-height: 130%;
+                    }
+                    @include tablet1{
+                        font-size: 17px;
+                    }
+                    @include tablet1{
+                        font-size: 16px;
+                    }
+                }
+                p{ 
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 176.5%;
+                    color: $shade2;
+                    
+                    margin-bottom: 29px;
+                    @include desktop1{
+                        font-size: 19px;
+                        line-height: 176.5%;
+                    }
+                    @include laptop2{
+                        font-size: 11px;
+                        line-height: 170%;
+                        
+                    }
+                    @include tablet1{
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+        .s22{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #A5A5A7;
+            @include laptop2{
+                padding-right: 32px;   
+            }
+            @include tablet1{
+                padding-right: 25px;
+            }
+            .num{
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 196.5%;
+                color: $primary;
+                margin-left: 57px;
+                margin-top: 13px;
+                @include desktop1{
+                    font-size: 36px;
+                    line-height: 196.5%;
+                    margin-left: 52px;
+                }
+                @include laptop2{
+                    font-size: 24px;
+                    line-height: 196.5%;
+                    margin-left: 39px;
+                }
+                @include tablet1{
+                    font-size: 18px;margin-left: 31px;
+                }@include tablet1{
+                    font-size: 17px;margin-left: 30px;
+                }
+                
+            }
+            
+            .s222{
+                display: flex;
+                flex-direction: column;
+                margin-left: 58px;margin-right: 15px;
+                margin-top: 15px;
+                @include tablet1{
+                    margin-left: 38px;
+                }@include tablet1{
+                    margin-left: 34px;
+                }
+                h3{
+                    font-weight: 700;
+                    font-size: 31px;
+                    line-height: 196.5%;
+                    color: $textColor;
+                    margin-bottom: 3px;
+                    @include desktop1{
+                        font-size: 35px;
+                        line-height: 196.5%;
+                    }@include laptop2{
+                        font-size: 23px;
+                        line-height: 130%;
+                    }
+                    @include tablet1{
+                        font-size: 17px;
+                    }
+                    @include tablet1{
+                        font-size: 16px;
+                    }
+                }
+                p{ 
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 176.5%;
+                    color: $shade2;
+                    margin-bottom: 29px;
+                    @include desktop1{
+                        font-size: 19px;
+                        line-height: 176.5%;
+                    }
+                    @include laptop2{
+                        font-size: 11px;
+                        line-height: 170%;
+                    }
+                    @include tablet1{
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}  

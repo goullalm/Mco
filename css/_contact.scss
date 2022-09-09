@@ -1,0 +1,292 @@
+@import "./responsive";
+
+.contact{
+    margin: 24px 21px 0 21px;
+    padding: 66px 66px;
+    border: 1px solid #A5A5A7;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+    @include laptop3{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }@include tablet2{
+        padding: 64px 28px;
+        margin: 14px 11px 0 11px;
+    }
+    .c1{
+        display: flex;
+        flex-direction: column;
+    
+        h2{
+            font-weight: 800;
+            font-size: 33px;
+            margin-bottom: 55px;
+            line-height: 40px;
+            color: $textColor;
+            @include laptop2{
+                font-size: 26px;
+                line-height: 42px;
+                margin-bottom: 45px;
+            }
+            @include laptop3{
+                font-size: 20px;
+                line-height: 35px;
+                text-align: center;
+            } 
+            @include tablet1{
+                font-size: 16px;
+                line-height: 25px;
+                margin-bottom: 18px;
+            }
+            @include tablet2{
+                font-size: 24.5px;
+                line-height: 26px;
+                padding-bottom: 10px;
+            }
+            @include mobile1{
+                font-size: 21px;
+                line-height: 26px;
+            }
+            @include mobile2{
+                font-size: 19px;
+                line-height: 26px;
+            }
+
+            span{
+                background: linear-gradient(130deg, $borderb 0%, $borderb 100%);
+                background-repeat: no-repeat;
+                background-size: 100% 45%;
+                background-position: 0 100%;
+                padding-bottom: 10px;
+            }
+        }
+        p{
+            width: 378px;
+            font-weight: 700;
+            font-size: 17px;
+            color: $shade1;
+            line-height: 150%;
+            @include laptop2{
+                font-size: 14px;
+                width: 295px;
+            }
+            @include laptop3{
+                width: 380px;
+                text-align: left;
+                br{
+                    display: none;
+                }
+            }
+            @include tablet1{
+                width: 250px;font-size: 10px;
+                line-height: 180.5%;
+            }@include mobile2{
+                width: 225px;
+            }
+            
+        }
+        .location{
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;align-items: center;
+            @include laptop2{
+                margin-top: 60px;
+            }
+            @include laptop3{
+                text-align: center;
+                align-items: center;
+                width: 200px;margin-top: 40px;
+            }
+            @include tablet1{
+                margin-top: 27px;
+            }
+            img{
+                width: 32px;margin-right: 25px;
+                @include laptop2{
+                    width: 30px;
+                    margin-right: 18px;
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 190%;
+                font-weight: 600;
+                color: $shade2;
+                @include laptop2{
+                    font-size: 13px;
+                }
+            }
+        }
+        .mail{
+            display: flex;
+            flex-direction: row;
+            margin-top: 38px;
+            align-items: center;
+            @include laptop2{
+                margin-top: 26px;
+            }
+            @include laptop3{
+                text-align: center;
+                align-items: center;
+                width: 100px;
+            }
+            @include tablet1{
+                margin-top: 16px;
+            }
+            img{
+                width: 32px;
+                margin-right: 25px;
+                @include laptop2{
+                    width: 30px;
+                    margin-right: 18px;
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 190%;
+                font-weight: 600;
+                color: $shade2;
+                @include laptop2{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    form{
+        overflow:hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 110px;
+        background: $background;
+        
+        @include laptop3{
+            margin-top: 50px;
+        }
+        #name{
+            outline: none;
+            border: none;
+            border: 1px solid $shade2;border-radius: 24px;
+            width: 564px;
+            height: 47px;padding: 0 30px;
+            color: $textColor; 
+            background: $background;
+            @include laptop2{
+                width: 364px;
+                height: 38px;padding: 0 20px;
+            }
+            @include tablet1{
+                width: 252px;
+                height: 28px;padding: 0 20px;font-size: 8px;
+                line-height: 10px;
+            }
+            @include mobile1{
+                width: 230px;
+            }
+        }
+        .tog{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @include laptop2{
+                margin-bottom: 16px;
+                margin-top: 16px;
+            }
+            #email{
+                outline: none;
+                border: none;
+                border: 1px solid $shade2;border-radius: 24px;
+                width: 260px;padding: 0 30px;
+                height: 47px;
+                color: $textColor; 
+                background: $background;
+                @include laptop2{
+                    width: 170px;height: 38px;padding: 0 20px;
+                }
+                @include tablet1{
+                    width: 115.59px;
+                    height: 28px;padding: 0 20px;font-size: 8px;
+                    line-height: 10px;
+                }
+                @include mobile1{
+                    width: 105px;
+                }
+            }
+                
+            }
+            #tel{
+                outline: none;
+                border: none;
+                border: 1px solid $shade2;border-radius: 24px;
+                width: 260px; margin-left: 40px;
+                height: 47px;padding: 0 30px;
+                color: $textColor; 
+                background: $background;
+                @include laptop2{
+                    width: 170px;height: 38px;padding: 0 20px;margin-left: 20px;
+                }
+                @include tablet1{
+                    width: 115.59px;
+                    height: 28px;padding: 0 20px;font-size: 8px;
+                    line-height: 10px;
+                }
+                @include mobile1{
+                    width: 105px;
+                    margin-left: 10px;
+                }
+            }
+            
+        }
+        #message{
+            outline: none;
+            border: none;
+            border: 1px solid $shade2;border-radius: 9px;
+            width: 564px;
+            height: 240px;
+            padding: 23px 30px;
+            margin-bottom: 35px;
+            color: $textColor; background: $background;
+            @include laptop2{
+                margin-bottom: 17px;width: 364px; height: 180px;
+                padding: 17px 23px;
+            }
+            @include tablet1{
+                width: 252px;
+                height:127px; font-size: 8px;padding: 11px 13px;
+                line-height: 10px;
+            }@include mobile1{
+                width: 230px;
+            }
+        }
+        #submit{
+            width: 137px;
+            height: 40px;
+            background: $primary;
+            border-radius: 19px;
+            border: none;
+            outline: 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            color: $textColor;
+            &:hover{
+                cursor: pointer;
+                background-color: $secondary;
+            }
+            @include laptop2{
+                width: 85px;
+                height: 27px;
+                font-size: 10px;
+                line-height: 10px;border-radius: 12px;
+            }
+            @include tablet1{
+                width: 63.52px;
+                height: 21px;
+                border-radius: 8px;font-size: 7px;
+                line-height: 8px;
+                
+            }
+        }
+
+}
